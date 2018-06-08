@@ -1,0 +1,4 @@
+dist/
+node.env
+node_modules
+.cache

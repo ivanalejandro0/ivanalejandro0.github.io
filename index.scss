@@ -1,0 +1,36 @@
+$ballSize: 80px;
+$ballSpeedY: 2.4s;
+$ballSpeedX: 2.05s;
+
+body { margin: 0; padding: 0; }
+.box {
+  width: 100vw;
+  height: 100vh;
+  background: #92B6D5;
+  position: relative;
+}
+
+.ball {
+  width: $ballSize;
+  height: $ballSize;
+  position: absolute;
+  // border-radius: 50%;
+  // background: #3673cf;
+  background: url("./imgs/party-parrot.webp");
+  background-size: 100px;
+  background-position: center;
+  // box-shadow: inset -50px -50px 50px rgba(0, 0, 0, .6),
+  //                    55px  55px 52px rgba(0, 0, 0, .04);
+  animation: moveX $ballSpeedX linear 0s infinite alternate,
+             moveY $ballSpeedY linear 0s infinite alternate;
+}
+
+
+@keyframes moveX {
+  from { left: 0; }
+  to   { left: calc(100% - #{$ballSize}); }
+}
+@keyframes moveY {
+  from { top: 0; }
+  to   { top: calc(100% - #{$ballSize}); }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ivanalejandro0.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ivanalejandro0/ivanalejandro0.github.io.git",
+  "author": "Ivan Alejandro <ivanalejandro0@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "autoprefixer": "^8.6.1",
+    "babel-preset-env": "^1.7.0",
+    "components": "^0.1.0",
+    "postcss-modules": "^1.1.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.8.1"
+  }
+}
